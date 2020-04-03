@@ -1,11 +1,10 @@
-﻿  @{
+﻿
+  @{
   Layout = "_Layout";
 }
-<h1>What would you like to do?</h1>
-<hr/>
-<div class="box">
-    @Html.ActionLink("Search Parks", "Index", "Parks", null, new { @class="btn" }) 
-    @Html.ActionLink("LOGIN/REGISTER", "Index", "Account", null, new { @class="btn" })
-</div>
 
-</ol>
+<h1>National Parks API</h1>
+<h3>A land of 62 parks await you!</h3>
+
+<p>@Html.ActionLink("Browse Parks", "Index", "Treats")</p>
+<p>@Html.ActionLink("New User? Click Here!", "Index", "Account")</p>
