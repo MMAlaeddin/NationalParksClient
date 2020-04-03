@@ -1,8 +1,16 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<h1>All Parks:</h1>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<ol>
+@foreach (Park park in Model)
+{
+    <ul>
+        <li>Name: @park.Name</li>
+        <li>Species: @park.Description</li>
+        <li>Age: @park.Campgrounds</li>
+        <li>Gender: @park.ClimbingRoutes</li>
+        <li>Gender: @park.GeneralStores</li>
+    </ul>
+    <a href="/Parks/Details/@(park.ParkId)"><p>View Details</p></a>
+    <br>
+}
+</ol>
