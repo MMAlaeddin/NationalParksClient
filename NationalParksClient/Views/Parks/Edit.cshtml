@@ -1,0 +1,38 @@
+@{
+  Layout = "_Layout";
+}
+
+@model NationalParksClient.Models.Park
+
+<h2>Edit</h2>
+
+<h4>Edit this Park: @Html.DisplayFor(model => model.Name)</h4>
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(model => model.ParkId)
+
+    @Html.LabelFor(model => model.Name)
+    @Html.EditorFor(model => model.Name)
+
+    @Html.LabelFor(model => model.City)
+    @Html.EditorFor(model => model.City)
+
+    @Html.LabelFor(model => model.State)
+    @Html.EditorFor(model => model.State)
+
+    @Html.LabelFor(model => model.Description)
+    @Html.EditorFor(model => model.Description)
+
+    @Html.LabelFor(model => model.ClimbingRoutes)
+    @Html.EditorFor(model => model.ClimbingRoutes)
+
+    @Html.LabelFor(model => model.Campgrounds)
+    @Html.EditorFor(model => model.Campgrounds)
+
+    @Html.LabelFor(model => model.GeneralStores)
+    @Html.EditorFor(model => model.GeneralStores)
+
+    <input type="submit" value="Save" />
+}
+<p>@Html.ActionLink("Back to Parks", "Index")</p>
