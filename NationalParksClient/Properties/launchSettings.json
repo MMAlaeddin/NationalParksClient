@@ -1,10 +1,11 @@
-﻿{
+﻿
+{
   "iisSettings": {
     "windowsAuthentication": false, 
     "anonymousAuthentication": true, 
     "iisExpress": {
-      "applicationUrl": "http://localhost:39242",
-      "sslPort": 44304
+      "applicationUrl": "http://localhost:19754",
+      "sslPort": 44311
     }
   },
   "profiles": {
@@ -15,7 +16,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "NationalParksClient": {
+    "TravelClient": {
       "commandName": "Project",
       "launchBrowser": true,
       "applicationUrl": "https://localhost:5001;http://localhost:5000",
