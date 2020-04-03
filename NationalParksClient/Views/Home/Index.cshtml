@@ -1,16 +1,11 @@
-﻿<h1>All Parks:</h1>
-
-<ol>
-@foreach (Park park in Model)
-{
-    <ul>
-        <li>Name: @park.Name</li>
-        <li>Species: @park.Description</li>
-        <li>Age: @park.Campgrounds</li>
-        <li>Gender: @park.ClimbingRoutes</li>
-        <li>Gender: @park.GeneralStores</li>
-    </ul>
-    <a href="/Parks/Details/@(park.ParkId)"><p>View Details</p></a>
-    <br>
+﻿  @{
+  Layout = "_Layout";
 }
+<h1>What would you like to do?</h1>
+<hr/>
+<div class="box">
+    @Html.ActionLink("Search Parks", "Index", "Parks", null, new { @class="btn" }) 
+    @Html.ActionLink("LOGIN/REGISTER", "Index", "Account", null, new { @class="btn" })
+</div>
+
 </ol>
