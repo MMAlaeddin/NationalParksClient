@@ -36,5 +36,14 @@ using Newtonsoft.Json.Linq;
 
       return park;
     }
+     public static void Post(Park park)
+    {
+      string jsonPark = JsonConvert.SerializeObject(park);
+      var apiCallTask = ApiHelper.Post(jsonPark);
+    }
+    public static void Delete(int id)
+    {
+      var apiCallTask = ApiHelper.Delete(id);
+    }
   }
 }

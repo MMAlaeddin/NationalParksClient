@@ -1,0 +1,12 @@
+  @{
+  Layout = "_Layout";
+}
+<h1>All Parks:</h1>
+
+<ol>
+@foreach (Park park in Model)
+{
+        <ul>@Html.ActionLink("Name: @park.Name", "Details", "Parks")</ul>
+
+}
+</ol>
