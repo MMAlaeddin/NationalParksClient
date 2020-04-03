@@ -10,10 +10,10 @@ namespace NationalParksClient.Controllers
 {
   public class ParksController : Controller 
   {
-    public IActionResult Index()
-    {
-      var allParks = Park.GetAll();
-      return View(allParks);
-    }
+public IActionResult Index()
+{
+  var allAnimals = Park.GetParks();
+  return View(allAnimals);
+}
   }
 }
