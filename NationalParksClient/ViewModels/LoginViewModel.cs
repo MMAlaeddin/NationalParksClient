@@ -1,4 +1,4 @@
-namespace BakeryTreat.ViewModels
+namespace NationalParksClient.ViewModels
 {
   public class LoginViewModel
   {

@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace BakeryTreat.ViewModels
+namespace NationalParksClient.ViewModels
 {
   public class RegisterViewModel
   {
